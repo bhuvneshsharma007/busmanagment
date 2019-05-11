@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column active">
+        <div class="content">
+          <h1>1</h1>
+          <div class="box" onclick=window.location.href='search.html'>
+            <h2>Search Bus Route</h2>
+            <p>Here you can find all buses based on bus no. route and in this you can find the busses of diffrent route all over in the north india actually all over india </p>
+
+          </div>
+        </div>
+        <div class="bg bg1"></div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h1>2</h1>
+          <div class="box" onclick=window.location.href='view.html'>
+            <h2>View All Bus Route</h2>
+            <p>here you can view all buses to go to diffrent route and here you can also view timing and destination point
+            and you can also view all buses and thairs drivers and all</p>
+            <img src="asphalt-automobile-bus-996954.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="bg bg2"></div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h1>3</h1>
+          <div class="box" onclick=window.location.href='about_us.html'>
+            <h2> Somthing About Us</h2>
+            <p>	Part of First Group, the world’s leading transport company, we help over 2 billion passengers every year to get to where they want to go. From our bus and train driver.</p>
+
+          </div>
+        </div> 
+        <div class="bg bg3"></div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h1>4</h1>
+          <div class="box" onclick=window.location.href='contact.html'>
+            <h2>Contact Us</h2>
+            <p> you can contact us with various methods<br>
+             mobile :9805102218<br>
+                ,7018783990
+                 Fax: adsfsf@addad<br></p>
+
+          </div>
+        </div>
+        <div class="bg bg4"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).on('mouseover', '.container .column', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
+  </body>
+</html>

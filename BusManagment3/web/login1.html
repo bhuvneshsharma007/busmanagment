@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.mylist {
+  width: 60%;
+  padding: 10px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 2px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+ 
+</style>
+</head>
+
+<body style="text-align: center;" background="bb.jpg">
+  <form name="myform" action="Logservlet" method="post" onsubmit="return myvalidation()">
+<h2>Login Here</h2>
+
+
+
+  <div class="container">
+    <label for="uname" style="text-align:left;"><b>Username</b></label> <br>
+    <input type="text" placeholder="Enter Username" name="unm">
+    <br><br> 
+    <label for="psw" style="text-align:left;"><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="pswd"><br><br>
+    <label style="text-align:left"><b>User</b></label><br>
+             <select id = "myList" style="width:270px;height:40px;" name="dropdown">
+               <option value = "1">Student</option>
+               <option value = "2">Faculity</option>
+               <option value = "3">Admin</option>
+                           </select></div><br><br>
+        
+    <button type="submit">Login</button>
+
+<script type="text/javascript">
+  function myvalidation(){
+  var Username=document.forms["myform"]["unm"].value;
+  var Password=document.forms["myform"]["pswd"].value;
+    flag=true;
+
+  if(Username==""){
+     alert("name can not be empty");
+     var flag=false;
+  } 
+  if(Password==""){
+     alert("password can not be empty");
+      
+     var flag=false;
+  }
+    
+  return flag;
+}
+</script>
+</form>
+</body>
+</html>
